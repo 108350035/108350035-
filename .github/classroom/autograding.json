@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Java Compile",
+      "setup": "",
+      "run": "javac -cp \".:./junit-4.13.1.jar:./Calculator.jar\" CalculatorFormTest.java",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 60
+    },
+    {
+      "name": "Addition Subtraction",
+      "setup": "",
+      "run": "java -cp \".:./junit-4.13.1.jar:./Calculator.jar:./hamcrest-core-1.3.jar\" CalculatorFormTest 0",
+      "input": "",
+      "output": "true",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Multiplication",
+      "setup": "",
+      "run": "java -cp \".:./junit-4.13.1.jar:./Calculator.jar:./hamcrest-core-1.3.jar\" CalculatorFormTest 1",
+      "input": "",
+      "output": "true",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Division",
+      "setup": "",
+      "run": "java -cp \".:./junit-4.13.1.jar:./Calculator.jar:./hamcrest-core-1.3.jar\" CalculatorFormTest 2",
+      "input": "",
+      "output": "true",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Floating point Calculation",
+      "setup": "",
+      "run": "java -cp \".:./junit-4.13.1.jar:./Calculator.jar:./hamcrest-core-1.3.jar\" CalculatorFormTest 3",
+      "input": "",
+      "output": "true",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
